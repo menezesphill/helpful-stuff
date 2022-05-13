@@ -29,3 +29,10 @@
  ```csh
  git push --set-upstream origin master
   ```
+  
+ Merge repos
+ 
+  ```csh
+ git merge target_branch --allow-unrelated-histories
+  ```
+
