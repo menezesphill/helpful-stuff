@@ -56,6 +56,8 @@ git push -u --force origin master
 
 ### DOCKER
 
+Access container shell
+
 ```csh
 docker run -it image_name sh
 ```
