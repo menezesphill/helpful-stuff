@@ -62,3 +62,15 @@ Access container shell
 docker run -it image_name sh
 ```
 
+Stop all instances
+
+```csh
+docker kill $(docker ps -q)
+```
+
+Delete all instances
+
+```csh
+docker rm $(docker ps -a -q)
+```
+
