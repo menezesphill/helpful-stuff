@@ -73,4 +73,11 @@ Delete all instances
 ```csh
 docker rm $(docker ps -a -q)
 ```
+Chance Branch name 
 
+``` csh
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
