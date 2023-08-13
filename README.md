@@ -54,6 +54,15 @@ git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git
 git push -u --force origin master
 ```
 
+Chance Branch name 
+
+``` csh
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
+
 ### DOCKER
 
 Access container shell
@@ -73,11 +82,11 @@ Delete all instances
 ```csh
 docker rm $(docker ps -a -q)
 ```
-Chance Branch name 
 
-``` csh
-git branch -m master main
-git fetch origin
-git branch -u origin/main main
-git remote set-head origin -a
+Copy files from containers to host machine
+
+```csh
+sudo docker ps # to find the cointainer ID
+sudo docker cp container-id:/path/filename.txt ~/Desktop/filename.txt
 ```
+
